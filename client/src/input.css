@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: "Maragsa";
+    src: url("../src/assets/fonts/Maragsa.otf");
+}
