@@ -8,6 +8,7 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 import Landing from './pages/Landing';
+import Home from './pages/Home';
 import { AnimatePresence } from 'framer-motion';
 
 const httpLink = createHttpLink({
@@ -36,14 +37,16 @@ function App() {
     <ApolloProvider client={client}>
       <AnimatePresence >
       <Router >
-        <div>
+        <div className='bg-[#FCBF49]'>
           <Routes >
             <Route
               path="/"
               element={<Landing/>}
-             
-               
               />
+              <Route 
+                path="/Home"
+                element={<Home/>}
+                />
           </Routes>
         </div>
       </Router>
