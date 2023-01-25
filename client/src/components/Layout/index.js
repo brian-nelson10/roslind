@@ -4,9 +4,9 @@ import React from "react";
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="grid grid-columns-2 gap-2 mx-0 my-0">
       {/* <Navbar /> */}
-      <main className="flex-1">{children}</main>
+      <main className="">{children}</main>
       {/* <Footer /> */}
     </div>
   );

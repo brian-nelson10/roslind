@@ -1,8 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import Layout from "../components/Layout";
 import InitialTransition from "../components/InitialTransition";
 import Navbar from "../components/Nav";
+import Hero from "../components/Hero";
+import HeroTitle from "../components/Hero/heroTitle";
 
 const content = (isFirstMount) => ({
   animate: {
@@ -22,11 +23,22 @@ const title = {
   },
 };
 
+const hero = {
+  initial: { opacity: 0 },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      delay: .7,
+      duration: 1.7,
+      ease: [0.6, -0.05, 0.01, 0.99],
+    },
+  },
+};
+
 export default function Landing({isFirstMount}) {
     return (
-        <>
-        
-        <Layout>
+        <>      
             <motion.section exit={{ opacity: 0 }}>
                 <InitialTransition />
                 <motion.div
@@ -38,9 +50,18 @@ export default function Landing({isFirstMount}) {
                         variants={title}>
                         <Navbar />
                     </motion.div>
+                    <motion.div className="grid grid-columns-2 gap-2 mx-0 my-0 ">
+                        <motion.div className="col-start-1 col-end-3 mt-44 ml-28">
+                      <HeroTitle text="Roslind" para="A Collection of Artist Dropouts"/>
+                      </motion.div>
+                      <motion.div 
+                        className="col-start-3 col-end-4" 
+                        variants={hero}>
+                      <Hero/>
+                      </motion.div>
+                    </motion.div>
                 </motion.div>
             </motion.section>
-        </Layout>
         </>
     );
 };
