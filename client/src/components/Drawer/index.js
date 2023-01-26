@@ -39,6 +39,7 @@ class Drawer extends React.Component {
           width: '100vw',
           height: '100vh',
           paddingTop: '3rem',
+          zIndex: '6',
         }
       }
     const menu = ['Home', 'Projects','Our Products','Services','Contact Us']

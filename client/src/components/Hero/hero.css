@@ -14,6 +14,10 @@
         
     }
   }
+
+.title {
+    z-index: 5;
+}
 /* .fill {
     position: absolute;
     width: 250px;

@@ -19,7 +19,7 @@ class Menu extends React.Component {
     render(){  
       return(
         <div 
-        className="absolute top-0 left-0 h-[this.state.open? '100vh': 0,] w-screen flex flex-col bg-black opacity-90 z-10 color-[#e8eddf]" >
+        className="z-70 absolute top-0 left-0 h-[this.state.open? '100vh': 0,] w-screen flex flex-col bg-black opacity-90 z-10 color-[#e8eddf]" >
           {
             this.state.open?
               <div className="pt-12">

@@ -50,7 +50,7 @@ const transition = { duration: 0.6, ease: [0.43, 0.13, 0.23, 0.96] };
 const Hero = () => (
     <>
         <section>
-            <div className="relative">
+            <div className="relative z-50">
                 <div className="h-100vh items-center justify-center">
                     <div className="relative">
                         <div
@@ -65,38 +65,6 @@ const Hero = () => (
                                             />
                             </Link>
                             <FiligreeHero />
-                            {/* <motion.img
-                                className="fill"
-                                src={Fill}
-                                alt="filigree"
-                                variants={fill}
-                                initial="initial"
-                                animate="animate"
-                                />
-                            <motion.img
-                                className="fill1"
-                                src={Fill}
-                                alt="filigree"
-                                variants={fillFlip}
-                                initial="initial"
-                                animate="animate"
-                                />
-                            <motion.img
-                                className="fill2"
-                                src={Fill}
-                                alt="filigree"
-                                variants={fill}
-                                initial="initial"
-                                animate="animate"
-                                />
-                            <motion.img
-                                className="fill3"
-                                src={Fill}
-                                alt="filigree"
-                                variants={fillFlip}
-                                initial="initial"
-                                animate="animate"
-                                /> */}
                         </div>
                     </div>
                 </div>

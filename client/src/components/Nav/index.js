@@ -7,7 +7,7 @@ export default function Navbar({ fixed }) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className="bg-[#eee8c5] border-gray-200 px-2 sm:px-4 py-2.5 lg:px-auto">
+<nav className="bg-[#eee8c5] border-gray-200 px-2 sm:px-4 py-2.5 sm: w-screen md: w-full lg:px-auto">
         <div className="container flex flex-wrap items-center justify-between mx-auto">
           <Link to={"/Home"}>
             <div

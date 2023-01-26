@@ -44,6 +44,7 @@ const parag = Array.from(para);
         <AnimatePresence>
             <div className="title">
               <motion.div 
+                style={{zIndex: "5"}}
                 className="text-xlxl font-bold font-maragsa" 
                 variants={title}
                 initial="hidden"

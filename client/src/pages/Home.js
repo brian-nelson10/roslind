@@ -1,4 +1,5 @@
 import React from "react";
+// import "./home.css";
 import { motion } from "framer-motion";
 import HomeNav from "../components/Nav/homeNav";
 import Hero from "../components/Hero";
@@ -35,11 +36,9 @@ const hero = {
   },
 };
 
-export default function Landing({isFirstMount}) {
+export default function Home({isFirstMount}) {
     return (
         <>
-        
-       
             <motion.section exit={{ opacity: 0 }} className="w-max h-max sm:flex-col">
               <div className="sm:flex-col">
                 <motion.div
@@ -52,11 +51,11 @@ export default function Landing({isFirstMount}) {
                         <HomeNav />
                     </motion.div>
                     <motion.div className=" grid grid-columns-2 gap-2 mx-0 my-0">
-                        <motion.div className="col-start-1 col-end-3 mt-44 ml-28">
+                        <motion.div className="rosTitle col-start-1 col-end-3 mt-44 ml-28">
                       <HeroTitle text="Roslind" para="A Collection of Artist Dropouts"/>
                       </motion.div>
                       <motion.div 
-                        className="col-start-3 col-end-4 sm: row-span-full" 
+                        className="rosHero col-start-3 col-end-4 sm: row-span-full" 
                         variants={hero}>
                       <Hero/>
                       </motion.div>
